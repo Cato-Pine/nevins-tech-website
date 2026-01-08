@@ -5,7 +5,9 @@
   --foreground: #2d3436;
   --green-dark: #1a4d3e;
   --green-mid: #2d6a4f;
+  --green-light: #40916c;
   --gold: #c9a227;
+  --gold-light: #d4af37;
   --cream: #f8f6f2;
   --charcoal: #2d3436;
   --white: #ffffff;
@@ -16,7 +18,9 @@
   --color-foreground: var(--foreground);
   --color-green-dark: var(--green-dark);
   --color-green-mid: var(--green-mid);
+  --color-green-light: var(--green-light);
   --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
   --color-cream: var(--cream);
   --color-charcoal: var(--charcoal);
   --font-sans: var(--font-geist-sans);
@@ -32,6 +36,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /* Smooth scrolling */
@@ -46,12 +51,169 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* Phone link styling */
-a[href^="tel:"] {
-  color: var(--green-dark);
-  font-weight: 600;
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-a[href^="tel:"]:hover {
-  color: var(--gold);
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 162, 39, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(201, 162, 39, 0.5); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Premium card styles */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(26, 77, 62, 0.15);
+}
+
+/* Button glow effect */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-glow:hover::before {
+  left: 100%;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section divider */
+.section-divider {
+  position: relative;
+}
+
+.section-divider::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green-dark), var(--gold));
+  border-radius: 2px;
+}
+
+/* Hero pattern overlay */
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+}
+
+/* Subtle grid pattern */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(26, 77, 62, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 77, 62, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Mountain silhouette for hero */
+.mountain-bg {
+  position: relative;
+}
+
+.mountain-bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%23f8f6f2' d='M0,120 L0,80 L180,40 L360,70 L480,20 L600,60 L720,10 L840,50 L960,30 L1080,70 L1200,20 L1320,60 L1440,40 L1440,120 Z'/%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Better shadows */
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-elevated {
+  box-shadow: 0 10px 40px rgba(26, 77, 62, 0.12);
 }
