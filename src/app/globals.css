@@ -199,8 +199,8 @@ button:focus-visible {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 120px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%23f8f6f2' d='M0,120 L0,80 L180,40 L360,70 L480,20 L600,60 L720,10 L840,50 L960,30 L1080,70 L1200,20 L1320,60 L1440,40 L1440,120 Z'/%3E%3C/svg%3E") no-repeat bottom;
+  height: 80px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath fill='%23ffffff' d='M0,80 L0,50 L180,25 L360,45 L480,15 L600,40 L720,8 L840,35 L960,20 L1080,45 L1200,15 L1320,40 L1440,25 L1440,80 Z'/%3E%3C/svg%3E") no-repeat bottom;
   background-size: cover;
 }
 
