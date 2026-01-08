@@ -59,7 +59,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <a
                       href="tel:307-699-0064"
-                      className="text-[var(--green-dark)] hover:text-[var(--gold)] text-lg font-medium"
+                      className="text-[var(--green-dark)] hover:text-[var(--green-mid)] text-lg font-medium underline decoration-transparent hover:decoration-current transition-all"
                     >
                       (307) 699-0064
                     </a>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a
                       href="mailto:justin@nevinstech.com"
-                      className="text-[var(--green-dark)] hover:text-[var(--gold)] text-lg font-medium"
+                      className="text-[var(--green-dark)] hover:text-[var(--green-mid)] text-lg font-medium underline decoration-transparent hover:decoration-current transition-all"
                     >
                       justin@nevinstech.com
                     </a>
