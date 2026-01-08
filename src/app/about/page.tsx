@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">The Story</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--green-dark)]">The Story</h2>
             <div className="prose prose-lg">
               <p className="text-[var(--charcoal)]/80 text-lg mb-4">
                 I started Nevins Tech because I saw local businesses struggling
@@ -93,7 +93,7 @@ export default function AboutPage() {
       <section className="py-16 bg-[var(--cream)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How I Work</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[var(--green-dark)]">How I Work</h2>
             <p className="text-lg text-[var(--charcoal)]/70 max-w-2xl mx-auto">
               These aren't corporate values dreamed up in a boardroom. They're
               how I actually run my business.
@@ -115,7 +115,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Proudly Local</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--green-dark)]">Proudly Local</h2>
             <p className="text-lg text-[var(--charcoal)]/80 mb-4">
               Nevins Tech serves businesses throughout Flathead County,
               including:

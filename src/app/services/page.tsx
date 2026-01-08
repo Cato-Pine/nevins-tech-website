@@ -197,7 +197,7 @@ export default function ServicesPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How We Work</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[var(--green-dark)]">How We Work</h2>
             <p className="text-lg text-[var(--charcoal)]/70 max-w-2xl mx-auto">
               No long contracts or surprise bills. Here's what working with us
               looks like.

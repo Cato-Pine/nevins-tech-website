@@ -94,7 +94,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[var(--green-dark)]">Sound Familiar?</h2>
             <p className="text-lg text-[var(--charcoal)]/70 max-w-2xl mx-auto">
               If you're dealing with any of these, you're not alone — and we can
               help.
@@ -118,7 +118,7 @@ export default function Home() {
       <section className="py-20 bg-[var(--cream)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How We Can Help</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[var(--green-dark)]">How We Can Help</h2>
             <p className="text-lg text-[var(--charcoal)]/70 max-w-2xl mx-auto">
               We speak your language, not tech jargon. Here's what we do for
               businesses like yours.
@@ -144,7 +144,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Local Means Something</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[var(--green-dark)]">Local Means Something</h2>
             <p className="text-lg text-[var(--charcoal)]/70 mb-8">
               We're not a faceless tech company in a distant city. We're your
               neighbors. We understand the Flathead Valley business community,
