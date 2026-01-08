@@ -73,7 +73,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/free-assessment"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[var(--green-dark)] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[var(--green-dark)] px-6 py-3 rounded-lg font-semibold hover:bg-[var(--gold)] hover:text-white transition-colors"
               >
                 Get Your Free Tech Assessment
                 <ArrowRight className="h-5 w-5" />
@@ -180,7 +180,7 @@ export default function Home() {
               </a>
               <Link
                 href="/free-assessment"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[var(--green-dark)] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-[var(--green-dark)] px-8 py-4 rounded-lg font-bold text-lg hover:bg-white transition-colors"
               >
                 Schedule Free Assessment
                 <ArrowRight className="h-5 w-5" />
